@@ -1,15 +1,17 @@
-import { useState } from 'react'
+import {BrowserRouter as Router, Route , Routes} from 'react-router-dom';
 
 import './App.css'
+import { LandingPage } from './components/LandingPage';
+import { About} from './components/About';
 
 function App() {
-  const [count, setCount] = useState(0)
+  <>
 
-  return (
-    <>
-      <h1 className='bg-amber-400 text-8xl px-4 px-5 shadow-2xs'>Hello From Tailwind</h1>
-    </>
-  )
+  <Router>
+    <Route path='/' element={LandingPage} />
+    <Route path='/about' element={About} />
+  </Router>
+  </>
 }
 
 export default App
