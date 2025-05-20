@@ -8,7 +8,7 @@ export function LandingPage() {
         <div>
             <p className='italic md:not-italic text-4xl text-blue '>
                 Hello, My name is Anshuman 
-                <span className='text-amber-200'>I experties in Backend Web Development</span>
+                <span className='text-blue-700'>I expertise in Backend Web Development</span>
             </p>
         </div>
             
